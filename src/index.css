@@ -40,3 +40,40 @@ body {
 .selected {
   text-decoration: underline;
 }
+
+.Rocket-Container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.Rocket-Img {
+  width: 20%;
+  height: 30%;
+  background-color: #000;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.Rocket-Info {
+  width: 65%;
+}
+
+.Rocket-Title {
+  margin-top: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.Rocket-Text {
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.Rocket-Button {
+  font-size: 1.2rem;
+  background-color: skyblue;
+}
