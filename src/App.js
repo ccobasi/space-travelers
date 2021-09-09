@@ -6,10 +6,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <Router>
-
+    <Router>
+      <div className="App">
+        <NavBar />
         <Switch>
           <Route path="/profile">
             <Profile />
@@ -18,8 +17,8 @@ function App() {
             <Rockets />
           </Route>
         </Switch>
-      </Router>
-    </div>
+      </div>
+    </Router>
   );
 }
 

@@ -7,11 +7,11 @@ const Profile = () => {
   const filteredRockets = rockets.filter((rocket) => rocket.reserved);
 
   return (
-    <div className="profile-wrapper">
-      <div className="my-rockets">
-        <h2>My Rockets</h2>
+    <div className="row my-5">
+      <div className="col-md-6">
+        <h2 className="mb-4">My Rockets</h2>
         {filteredRockets.length !== 0 && (
-          <ul>
+          <ul className="list-unstyled border border-secondary border-2 rounded shadow-sm">
             {filteredRockets.map((rocket) => (
               <MyRockets key={rocket.id} rocket={rocket} />
             ))}
@@ -22,6 +22,6 @@ const Profile = () => {
   );
 };
 
-const MyRockets = ({ rocket }) => <li>{rocket.rocketName}</li>;
+const MyRockets = ({ rocket }) => <li className="text-dark p-3 border-bottom border-dark profileList fw-bold">{rocket.rocketName}</li>;
 
 export default Profile;

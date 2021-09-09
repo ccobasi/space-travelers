@@ -3,7 +3,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Nav, Navbar } from 'react-bootstrap';
 import logo from '../assets/planet.png';
-import '../index.css';
 
 function NavBar() {
   return (
