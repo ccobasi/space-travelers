@@ -3,6 +3,7 @@ import axios from 'axios';
 const GET_ROCKET_REQUEST = 'GET_ROCKET_REQUEST';
 const GET_ROCKET_SUCCESS = 'GET_ROCKET_SUCCESS';
 const GET_ROCKET_FAILURE = 'GET_ROCKET_FAILURE';
+const BOOK_ROCKET = 'BOOK_ROCKET';
 
 export const getRocketRequest = () => ({
   type: GET_ROCKET_REQUEST,
@@ -16,6 +17,11 @@ export const getRocketSuccess = (rockets) => ({
 export const getRocketFailure = (error) => ({
   type: GET_ROCKET_FAILURE,
   payload: error,
+});
+
+export const bookRocket = (payload) => ({
+  type: BOOK_ROCKET,
+  payload,
 });
 
 export const fetchRockets = () => (dispatch) => {
@@ -61,6 +67,15 @@ const rocketsReducer = (state = initialState, action) => {
         loading: false,
         rockets: [],
         error: action.payload,
+      };
+
+    case BOOK_ROCKET:
+      return {
+        ...state,
+        rockets: state.rockets.map((rocket) => {
+          if (rocket.id !== action.payload.id) return rocket;
+          return { ...rocket, reserved: true };
+        }),
       };
 
     default:
