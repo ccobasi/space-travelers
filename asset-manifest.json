@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/space-travelers/static/css/main.76babf1b.chunk.css",
-    "main.js": "/space-travelers/static/js/main.b4dfe86d.chunk.js",
-    "main.js.map": "/space-travelers/static/js/main.b4dfe86d.chunk.js.map",
+    "main.css": "/space-travelers/static/css/main.b985daa0.chunk.css",
+    "main.js": "/space-travelers/static/js/main.964ecfd6.chunk.js",
+    "main.js.map": "/space-travelers/static/js/main.964ecfd6.chunk.js.map",
     "runtime-main.js": "/space-travelers/static/js/runtime-main.b0268c29.js",
     "runtime-main.js.map": "/space-travelers/static/js/runtime-main.b0268c29.js.map",
     "static/css/2.818011ed.chunk.css": "/space-travelers/static/css/2.818011ed.chunk.css",
-    "static/js/2.31e5aba8.chunk.js": "/space-travelers/static/js/2.31e5aba8.chunk.js",
-    "static/js/2.31e5aba8.chunk.js.map": "/space-travelers/static/js/2.31e5aba8.chunk.js.map",
+    "static/js/2.0da0c4cd.chunk.js": "/space-travelers/static/js/2.0da0c4cd.chunk.js",
+    "static/js/2.0da0c4cd.chunk.js.map": "/space-travelers/static/js/2.0da0c4cd.chunk.js.map",
     "index.html": "/space-travelers/index.html",
     "static/css/2.818011ed.chunk.css.map": "/space-travelers/static/css/2.818011ed.chunk.css.map",
-    "static/css/main.76babf1b.chunk.css.map": "/space-travelers/static/css/main.76babf1b.chunk.css.map",
-    "static/js/2.31e5aba8.chunk.js.LICENSE.txt": "/space-travelers/static/js/2.31e5aba8.chunk.js.LICENSE.txt",
+    "static/css/main.b985daa0.chunk.css.map": "/space-travelers/static/css/main.b985daa0.chunk.css.map",
+    "static/js/2.0da0c4cd.chunk.js.LICENSE.txt": "/space-travelers/static/js/2.0da0c4cd.chunk.js.LICENSE.txt",
     "static/media/planet.27109cd3.png": "/space-travelers/static/media/planet.27109cd3.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b0268c29.js",
     "static/css/2.818011ed.chunk.css",
-    "static/js/2.31e5aba8.chunk.js",
-    "static/css/main.76babf1b.chunk.css",
-    "static/js/main.b4dfe86d.chunk.js"
+    "static/js/2.0da0c4cd.chunk.js",
+    "static/css/main.b985daa0.chunk.css",
+    "static/js/main.964ecfd6.chunk.js"
   ]
 }
