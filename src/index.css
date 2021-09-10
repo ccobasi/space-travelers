@@ -36,3 +36,7 @@ body {
   border-left: 2px solid #a7a7a7;
   padding-left: 15px;
 }
+
+.selected {
+  text-decoration: underline;
+}

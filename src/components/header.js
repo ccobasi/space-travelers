@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import logo from '../assets/planet.png';
 import '../index.css';
 
@@ -10,9 +11,9 @@ const NavBar = () => (
       <h1 className="title">Space Traveler's Hub</h1>
     </div>
     <div className="linkDiv">
-      <a className="link" href="a">Rockets</a>
-      <a className="link" href="a">Missions</a>
-      <a className="link profile" href="a">My Profile</a>
+      <NavLink className="link" exact activeClassName="selected" to="/">Rockets</NavLink>
+      <NavLink className="link" exact activeClassName="selected" to="/missions">Missions</NavLink>
+      <NavLink className="link profile" exact activeClassName="selected" to="/profile">My Profile</NavLink>
     </div>
   </nav>
 );
