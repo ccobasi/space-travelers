@@ -47,21 +47,21 @@ const Rocket = (props) => {
   );
 };
 
-const ReserveButton = (props) => {
+export const ReserveButton = (props) => {
   const { reserved, bookRocket, bookCanceled } = props;
 
   if (reserved) {
-    return <button className="Rocket-Button" type="button" onClick={bookCanceled}>Cancel Reservations</button>;
+    return <button role="textbox" className="Rocket-Button-Cancel" type="button" onClick={bookCanceled}>Cancel Reservations</button>;
   }
-  return <button className="Rocket-Button" type="button" onClick={bookRocket}>Reserve Rocket</button>;
+  return <button role="textbox" className="Rocket-Button" type="button" onClick={bookRocket}>Reserve Rocket</button>;
 };
 
-const ReserveBadge = (props) => {
+export const ReserveBadge = (props) => {
   const { reserved } = props;
   if (reserved) {
-    return <span><button type="button" className="Rocket-Reserve">Reserved</button></span>;
+    return <span><button role="textbox" type="button" className="Rocket-Reserve">Reserved</button></span>;
   }
-  return <span />;
+  return <p className="Rocket-Cancel" />;
 };
 
 Rocket.propTypes = {

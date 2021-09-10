@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Nav, Navbar } from 'react-bootstrap';
 import logo from '../assets/planet.png';
+import '../index.css';
 
 function NavBar() {
   return (
@@ -13,14 +14,19 @@ function NavBar() {
       </Navbar.Brand>
       <Navbar.Toggle className="me-3" />
       <Navbar.Collapse>
-        <Nav className="ms-auto d-flex align-items-center me-3">
+        <Nav
+          activeKey="/"
+          /* eslint-disable-next-line */
+          onSelect={(selectedKey) => alert(`You just selected ${selectedKey} !`)}
+          className="ms-auto d-flex align-items-center me-3"
+        >
           <Nav.Item className="px-2">
-            <Nav.Link eventKey="1" as={Link} to="/" className="fs-5 text-primary fw-bold">
+            <Nav.Link eventKey="1" as={Link} exact to="/" className="fs-5 text-primary fw-bold" activeClassName="underline">
               Rockets
             </Nav.Link>
           </Nav.Item>
           <Nav.Item className="px-2">
-            <Nav.Link eventKey="2" as={Link} to="/missions" className="fs-5 text-success fw-bold">
+            <Nav.Link eventKey="2" as={Link} exact to="/missions" className="fs-5 text-success fw-bold" activeClassName="underline">
               Missions
             </Nav.Link>
           </Nav.Item>
@@ -28,7 +34,7 @@ function NavBar() {
             |
           </Nav.Item>
           <Nav.Item className="px-2">
-            <Nav.Link eventKey="3" as={Link} to="/profile" className="fs-5 text-danger fw-bold">
+            <Nav.Link eventKey="3" as={Link} exact to="/profile" className="fs-5 text-danger fw-bold" activeClassName="underline">
               My Profile
             </Nav.Link>
           </Nav.Item>
