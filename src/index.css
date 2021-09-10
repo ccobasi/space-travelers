@@ -75,7 +75,9 @@ body {
 
 .Rocket-Button {
   font-size: 1.2rem;
-  background-color: skyblue;
+  background-color: rgb(32, 64, 248);
+  color: #fff;
+  border: skyblue;
 }
 
 .Rocket-Reserve {
