@@ -4,8 +4,8 @@
 
 Web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
 
-<!-- - ![screenshot](./src/assets/screenshot.png)  
-- ![screenshot](./src/resources/2.png)  -->
+[screenshot](./src/assets/screenshot.png)  
+
 
 ## :red_circle: Live Demo and Explaining Video
 
