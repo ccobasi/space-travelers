@@ -9,7 +9,7 @@ Web application for a company that provides commercial and scientific space trav
 
 ## :red_circle: Live Demo and Explaining Video
 
-- [Github](https://ccobasi.github.io/space-travelers/#/) 
+- [Github](https://ccobasi.github.io/space-travelers/) 
 - [Video](https://)
 
 ## :hammer: Built With
