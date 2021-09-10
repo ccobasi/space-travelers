@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { PropTypes } from 'prop-types';
 import '../index.css';
-import { bookRocket } from '../redux/rockets/rockets';
+import { bookRocket, bookCanceled } from '../redux/rockets/rockets';
 
 const Rocket = (props) => {
   const { rocket } = props;
@@ -20,6 +20,14 @@ const Rocket = (props) => {
     );
   };
 
+  const canceled = () => {
+    dispatch(
+      bookCanceled({
+        id,
+      }),
+    );
+  };
+
   return (
     <div id={id} className="Rocket-Container">
       <img className="Rocket-Img" src={flickrImages} alt={rocketName} />
@@ -29,6 +37,7 @@ const Rocket = (props) => {
         <ReserveButton
           reserved={reserved}
           bookRocket={booked}
+          bookCanceled={canceled}
         />
       </div>
     </div>
@@ -36,10 +45,10 @@ const Rocket = (props) => {
 };
 
 const ReserveButton = (props) => {
-  const { reserved, bookRocket } = props;
+  const { reserved, bookRocket, bookCanceled } = props;
 
   if (reserved) {
-    return <button className="Rocket-Button" type="button">Cancel Reservations</button>;
+    return <button className="Rocket-Button" type="button" onClick={bookCanceled}>Cancel Reservations</button>;
   }
   return <button className="Rocket-Button" type="button" onClick={bookRocket}>Reserve Rocket</button>;
 };
