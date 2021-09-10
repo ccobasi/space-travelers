@@ -89,10 +89,6 @@ body {
   margin-right: 5px;
 }
 
-.underline {
-  border-bottom-width: 4px solid green;
- }
-
 .px-2 {
   flex-direction: row;
   display: flex;
@@ -111,11 +107,16 @@ body {
   text-decoration: none;
 }
 
-.fs-5 a:hover {
+.fs-5 a:active {
+  text-decoration: underline blue;
   color: blue;
 }
 
-.fs-5 a:active, a:focus {
-  text-decoration: underline blue; 
+.fs-5 a:focus {
+  text-decoration: underline blue;
+  color: blue;
+}
+
+.fs-5 a:hover {
   color: blue;
 }
