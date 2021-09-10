@@ -5,6 +5,24 @@ import { Nav, Navbar } from 'react-bootstrap';
 import logo from '../assets/planet.png';
 import '../index.css';
 
+const links = [
+  {
+    id: 1,
+    path: '/',
+    text: 'Rockets',
+  },
+  {
+    id: 2,
+    path: '/missions',
+    text: 'Missions',
+  },
+  {
+    id: 3,
+    path: '/profile',
+    text: 'My profile',
+  },
+];
+
 function NavBar() {
   return (
     <Navbar expand="lg" className="navbar navbar-expand-lg navbar-light bg-white border-bottom border-secondary border-2">
@@ -14,29 +32,14 @@ function NavBar() {
       </Navbar.Brand>
       <Navbar.Toggle className="me-3" />
       <Navbar.Collapse>
-        <Nav
-          activeKey="/"
-          /* eslint-disable-next-line */
-          onSelect={(selectedKey) => alert(`You just selected ${selectedKey} !`)}
-          className="ms-auto d-flex align-items-center me-3"
-        >
+        <Nav className="ms-auto d-flex align-items-center me-3">
           <Nav.Item className="px-2">
-            <Nav.Link eventKey="1" as={Link} exact to="/" className="fs-5 text-primary fw-bold" activeClassName="underline">
-              Rockets
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item className="px-2">
-            <Nav.Link eventKey="2" as={Link} exact to="/missions" className="fs-5 text-success fw-bold" activeClassName="underline">
-              Missions
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item className="pt-2 h1 text-secondary not-in-movile-size">
-            |
-          </Nav.Item>
-          <Nav.Item className="px-2">
-            <Nav.Link eventKey="3" as={Link} exact to="/profile" className="fs-5 text-danger fw-bold" activeClassName="underline">
-              My Profile
-            </Nav.Link>
+            {links.map((link) => (
+
+              <Nav.Link key={link.id} eventKey="1" as={Link} exact to={link.path} className="fs-5 text-primary fw-bold" activeClassName="underline">
+                {link.text}
+              </Nav.Link>
+            ))}
           </Nav.Item>
         </Nav>
       </Navbar.Collapse>
