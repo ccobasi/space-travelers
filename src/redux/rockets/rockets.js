@@ -70,6 +70,7 @@ const rocketsReducer = (state = initialState, action) => {
 
     case GET_ROCKET_FAILURE:
       return {
+        ...state,
         loading: false,
         rockets: [],
         error: action.payload,

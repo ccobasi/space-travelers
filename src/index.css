@@ -107,12 +107,8 @@ body {
   text-decoration: none;
 }
 
-.fs-5 a:active {
-  text-decoration: underline blue;
-  color: blue;
-}
-
-.fs-5 a:focus {
+.fs-5 a:active,
+a:focus{
   text-decoration: underline blue;
   color: blue;
 }
